@@ -1,0 +1,185 @@
+
+
+.site
+	z-index 10
+
+
+.bg
+	background #131318
+
+
+
+.section
+	width 100%	
+	z-index 1000
+
+
+
+.section-height-fix
+	padding 200px 0 !important
+
+
+.container
+	z-index 10000
+
+
+
+.black
+	background: #131318
+	color #FFF
+	overflow hidden
+	position relative
+	.box-textos
+		padding-top 100px
+		position relative
+		z-index 1000
+		.depoimento
+			padding-bottom 15px
+			position relative
+			p
+				font-size 25px
+				line-height 35px
+				color #94949d
+				strong
+					text-transform uppercase
+					color #FFF
+					font-size 12px
+		.depoimento:after
+			content '\2018'
+			position absolute
+			top -30px
+			left - 25px
+			font-size 80px
+			font-family "AntennaCondensedBold"
+		.texto
+			padding-top 30px
+	.box-images
+		position relative
+		z-index 1000
+		transform-style: preserve-3d
+		.image
+			transform: translateZ(100)
+		.logo
+			text-align right
+			position relative
+			top - 130px
+			right 0
+			transform: translateZ(20px)
+			transition(all .5s ease-in-out)
+			img
+				display inline-block
+	.box-images:hover
+		.logo
+			top - 200px
+			transform: translateZ(80px)
+			right 100px
+			
+
+.black:after
+	content ""
+	width 100%
+	height 500px
+	background url('_assets/_imgs/_elements/section-topo-branco-left.png?v=1') center top
+	position absolute
+	top 0
+	left 0
+	z-index 1
+.black:before
+	content ""
+	width 100%
+	height 500px
+	background url('_assets/_imgs/_elements/section-bottom-branco-left.png?v=1') center bottom
+	position absolute
+	bottom 0
+	left 0
+	z-index 1
+
+
+
+.white:after
+	content ""
+	width 100%
+	height 500px
+	background url('_assets/_imgs/_elements/section-topo-branco-right.png?v=3') center top
+	position absolute
+	top 0
+	left 0
+	z-index 1
+.white:before
+	content ""
+	width 100%
+	height 500px
+	background url('_assets/_imgs/_elements/section-bottom-branco-right.png?v=3') center bottom
+	position absolute
+	bottom 0
+	left 0
+	z-index 1
+
+.white
+	background #FFF
+	overflow hidden
+	position relative
+	.box-textos
+		padding-top 100px
+		position relative
+		z-index 1000
+		.depoimento
+			padding-bottom 15px
+			position relative
+			p
+				font-size 25px
+				line-height 35px
+				color #94949d
+				strong
+					text-transform uppercase
+					color #000
+					font-size 12px
+		.depoimento:after
+			content '\2018'
+			position absolute
+			top -30px
+			left - 25px
+			font-size 80px
+			font-family "AntennaCondensedBold"
+			color #000
+		.texto
+			padding-top 40px
+	.box-images
+		position relative
+		z-index 1000
+		transform-style: preserve-3d
+		.image
+			transform: translateZ(100)
+		.logo
+			text-align left
+			position relative
+			top - 130px
+			left 0
+			transform: translateZ(20px)
+			transition(all .5s ease-in-out)
+			img
+				display inline-block
+	.box-images:hover
+		.logo
+			top - 200px
+			transform: translateZ(80px)
+			left 100px
+
+
+
+
+.white-2
+	overflow hidden
+	.box-textos
+		padding-top 70px
+		.depoimento
+			font-size 20px
+			padding-bottom 30px
+			p
+				color #94949d
+		.texto
+			padding-top 80px
+	.box-images
+		animation-fill-mode: forwards;
+		.logo
+			transform: translateZ(20px)

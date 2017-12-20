@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){$=jQuery,jQuery(".menu-empreendimentos span").click(function(){jQuery(".menu-empreendimentos span").removeClass("active"),jQuery(this).addClass("active");var e=jQuery(this).attr("data-filter");return imovelGrid.isotope({filter:e}),!1})});

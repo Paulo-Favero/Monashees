@@ -1,0 +1,43 @@
+.modal-content.modal-content-pessoas
+	position relative
+	radius(0)
+	background #404040
+	min-height 100%
+
+.detalhes-pessoa
+	position absolute
+	top 0
+	width 100%
+	padding 70px
+	height 100%
+	background-repeat no-repeat
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-size cover
+	background-position center center
+	.texto
+		color #FFF
+		h2
+			color #FFF
+			font-size  4vw
+		.cargo
+			font-size 2vw
+			margin-bottom 30px
+		p
+			font-size 1.2vw
+
+
+@media (max-width: 768px)
+	.modal-content.modal-content-pessoas
+		height auto
+	.detalhes-pessoa
+		background-position center center
+		background #404040
+		padding 30px
+		.texto
+			padding-bottom 100px
+			h2
+				font-size 6vw
+			p
+				font-size 4vw

@@ -1,0 +1,210 @@
+/******************************************************************
+* RESET
+******************************************************************/
+.menu-languages
+	text-align right
+	display inline-block
+	padding-top 10px
+	a
+		display inline-block
+		border 1px #FFF solid
+		radius(4px)
+		text-transform uppercase
+		color #FFF
+		padding 0 0
+		width 40px
+		text-align center 
+		height 28px
+		line-height 28px
+		font-family "AntennaCondensedBold"
+		font-size 12px
+	a:hover
+		background #FFF
+		color #000
+.btn-menu-site
+	width 45px
+	height 45px
+	background #222
+	border 0
+	padding 0 8px
+	radius(0px)
+	display inline-block
+	transition(all .3s ease-in-out)
+	span
+		height 3px
+		background #999
+		display block
+		margin-bottom 5px
+		radius(4px)
+	span:last-child
+		margin-bottom 0
+.btn-menu-site:hover
+	background #FFF
+	span
+		background #222
+/******************************************************************
+* RESET
+******************************************************************/
+.video-full
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 2
+.video-1
+	z-index 2
+.video-2
+	z-index 1
+/******************************************************************
+* VIDEO 1
+******************************************************************/
+.btn-go
+	width 100px
+	height 200px
+	radius(50px)
+	position absolute
+	bottom 0
+	background #FFF
+	z-index 100
+	left 50%
+	margin-left -50px
+
+
+.section-video-1
+	position relative
+	.container
+		z-index 100
+	.fp-tableCell
+		vertical-align top
+	.texto
+		position relative
+		z-index 100
+		color #FFF
+		padding-top 0px
+		h1
+			font-size 55px
+			line-height 65px
+			text-transform uppercase
+			font-family "AntennaThin"
+		p
+			font-size 20px
+			line-height 30px
+			strong
+				font-family "AntennaThin" !important
+				font-size 26px
+	.topo
+		position relative
+		z-index 2000
+		padding-top 20px
+		.container
+			z-index 2000
+			position relative
+	.topo:after
+		content ""
+		width 100%
+		height 500px
+		background url('_assets/_imgs/_elements/section-topo-preto-left.png?v=3') center top
+		position absolute
+		top 0
+		left 0
+		z-index 100
+.section-video-1:before
+	content ""
+	width 100%
+	height 400px
+	background url('_assets/_imgs/_elements/section-bottom-branco-right-2.png?v=1') center top
+	position absolute
+	bottom 0
+	left 0
+	z-index 10
+.section-video-1:after
+	content ""
+	width 100%
+	height 100%
+	background rgba(0,0,0,0.7)
+	position absolute
+	top 0
+	left 0
+	z-index 1
+	
+@media (max-width: 768px)
+	#fp-nav
+		display none important
+		visibility hidden
+	.section-video-1
+		padding 0 0
+		.topo:after
+			content ""
+			width 100%
+			height 300px
+			background url('_assets/_imgs/_elements/section-topo-preto-left.png?v=3') center top
+			position absolute
+			top 0
+			left 0
+			z-index 100
+		.texto
+			padding 0 30px
+			h1
+				font-size 27px
+				line-height 32px
+				text-transform uppercase
+				margin-bottom 40px
+			p
+				font-size 16px
+				line-height 20px
+				strong
+					font-size 18px
+			.texto-2
+				padding-left 40px
+	
+/******************************************************************
+* VIDEO 2
+******************************************************************/
+.video-texto-2
+	position relative
+	overflow hidden
+	.fp-tableCell
+		vertical-align top
+	.texto-1
+		color #FFF
+		padding-top 20px
+		h1
+			text-transform uppercase
+			font-size 50px
+			font-family "AntennaThin"
+	.texto-2
+		color #FFF
+		p
+			font-size 21px
+.video-texto-2:before
+	content ""
+	background rgba(0,0,0,0.7)
+	top 0
+	left 0
+	width 100%
+	height 100%
+	position absolute
+.video-texto-2:after
+	content ""
+	width 100%
+	height 500px
+	background url('_assets/_imgs/_elements/section-bottom-branco-left-2.png?v=1') center bottom
+	position absolute
+	bottom 0
+	left 0
+	z-index 10
+
+
+@media (max-width: 768px)
+	.video-texto-2
+		.texto-1
+			h1
+				font-size 30px
+		.texto-2
+			padding-left 40px
+			p
+				font-size 15px
+				line-height 20px
+				strong
+					font-size 17px

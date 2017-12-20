@@ -1,0 +1,45 @@
+.pace
+  -webkit-pointer-events none
+  pointer-events none
+  -webkit-user-select none
+  -moz-user-select none
+  user-select none
+
+.pace-inactive
+  display none
+
+
+.pace .pace-progress
+  background  #000
+  position absolute
+  z-index 100
+  top 0
+  right 100%
+  width 100%
+  height 5px
+
+
+.pace-running
+  .app-page
+    opacity 1
+    transition(all .2s ease-in-out)
+  .video-1
+  .video-2
+    opacity 1
+.pace-done
+  .app-page
+    opacity 1
+    transition(all .2s ease-in-out)
+    overflow-x hidden
+  .video-1
+  .video-2
+    opacity 1
+
+
+@media (max-width: 980px)
+  .pace .pace-progress
+    top 0
+
+@media (max-width: 768px)
+  .pace .pace-progress
+    top 0

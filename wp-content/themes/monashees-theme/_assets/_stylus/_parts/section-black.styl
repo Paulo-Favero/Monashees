@@ -1,0 +1,140 @@
+.item
+	height 100%
+
+.section-black
+	height 100%
+	width 100%
+	background url('_assets/_imgs/triangulo-black.png') center center no-repeat
+	display flex
+	align-items center
+	justify-content center
+	.box-textos
+		padding-top 50px
+		position relative
+		z-index 1000
+		.depoimento
+			padding-bottom 15px
+			position relative
+			p
+				font-size 25px
+				line-height 35px
+				color #94949d
+				strong
+				span
+					text-transform uppercase
+					color #FFF
+					font-size 12px
+					line-height 20px
+					display block
+				span
+					font-size 14px
+					color #FFF
+
+		.depoimento:after
+			content '\2018'
+			position absolute
+			top -70px
+			left 0
+			font-size 90px
+			color #FFF
+			font-family "AntennaCondensedBold"
+		.texto-complementar
+			color #FFF
+			padding-top 20px
+			
+	.box-images
+		position relative
+		z-index 1000
+		transform-style: preserve-3d
+		.image
+			transform: translateZ(100)
+		.logo
+			text-align right
+			position relative
+			top - 130px
+			right 0
+			transform: translateZ(20px)
+			transition(all .5s ease-in-out)
+			img
+				display inline-block
+	/*
+	.box-images:hover
+		.logo
+			top - 200px
+			transform: translateZ(80px)
+			right 100px
+	*/
+	
+.section-empresa
+	z-index 10
+	transition(all .3s ease-in-out)
+
+
+.topo-design-white
+.bottom-design-white
+.topo-design-black
+.bottom-design-black
+	//height 511px
+	z-index 500
+	position relative
+	margin-top 300
+
+.topo-design-white
+	background url('_assets/_imgs/triangulo-white.png') center top no-repeat
+.bottom-design-white
+	background url('_assets/_imgs/triangulo-white.png') center top no-repeat
+.topo-design-black
+	background url('_assets/_imgs/triangulo-black.png') center top no-repeat
+.bottom-design-black
+	background url('_assets/_imgs/triangulo-black.png') center top no-repeat
+
+
+
+@media (max-height: 768px)
+	.topo-design-white
+	.bottom-design-white
+	.topo-design-black
+	.bottom-design-black
+		height 616px
+
+	.section-black
+		.box-textos
+			.depoimento
+				p
+					font-size 20px
+					line-height 30px
+					strong
+					span
+						font-size 12px
+						line-height 20px
+					span
+						font-size 14px
+			.texto-complementar
+				padding-top 10px
+/*
+
+@media (max-height: 670px)
+	.topo-design-white
+	.bottom-design-white
+	.topo-design-black
+	.bottom-design-black
+		height 665px !important
+
+
+@media (max-height: 645px)
+	.topo-design-white
+	.bottom-design-white
+	.topo-design-black
+	.bottom-design-black
+		height 678px !important
+
+
+
+@media (max-height: 600px)
+	.topo-design-white
+	.bottom-design-white
+	.topo-design-black
+	.bottom-design-black
+		height 700px !important
+		
+

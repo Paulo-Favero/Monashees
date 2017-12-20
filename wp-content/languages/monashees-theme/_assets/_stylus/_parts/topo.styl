@@ -1,0 +1,86 @@
+.topo
+	padding-top 20px
+	position absolute
+	top 0
+	left 0
+	width 100%
+	z-index 600
+	.logo
+		position relative
+		z-index 10
+	.menu
+		position relative
+		z-index 10
+		.menu-lingua
+			text-align right
+			padding-top 8px
+			padding-right 60px
+			a
+				display inline-block
+				width 36px
+				height 25px
+				border 1px #FFF solid
+				radius(5px)
+				text-transform uppercase
+				color #FFF
+				text-align center
+				line-height  25px
+				font-size 10px
+				font-family "AntennaCondensedBold"
+			a:hover
+				background #FFF
+				color #000
+		button
+			width 50px
+			height 50px
+			padding 0 10px
+			border 0
+			position absolute
+			top 15px
+			radius(4px)
+			position fixed
+			right 50%
+			margin-right - 570px
+			background rgba(0,0,0,0.8)
+			span
+				display block
+				height 3px
+				radius(5px)
+				background #999
+				margin-bottom 4px
+			span:last-child
+				margin-bottom 0
+		
+.topo:before
+	content ""
+	width 100%
+	height 400px
+	position absolute
+	top 0
+	left 0
+	z-index 1
+	background url('_assets/_imgs/_elements/section-topo-preto-left.png') center top
+
+
+@media (max-width: 1200px)
+	.topo
+		.menu
+			button
+				right 20px
+				margin-right 0
+
+@media (max-width: 980px)
+	.topo
+		.menu
+			.menu-lingua
+				display none
+			button
+				right 20px
+				margin-right 0
+	.topo:before
+		height 120px
+		background url('_assets/_imgs/topo-mobile.png?v=3')  bottom left no-repeat
+		
+
+
+
